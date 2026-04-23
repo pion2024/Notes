@@ -14,11 +14,12 @@ Personal Notes for Jean-Pierre Serre's *Linear Representations of Finite Groups 
   - tensor product (finite group)
   - Schur's lemma 
   - induced representation (finite group) by cosets 
-- to study : compact groups and representations in characteristic 0 
+- in progress : compact groups and representations in characteristic 0 
   - compact group
   - group algebra 
-  - character theory 
+  - character theory in details
   - induced representation for compact groups 
+  - Haar's measure 
   - Mackey's theory 
 
 ---
@@ -117,7 +118,7 @@ Personal Notes for Jean-Pierre Serre's *Linear Representations of Finite Groups 
 ### Functor  $\text{Hom}_G(\cdot,\cdot)$
 
 - left to study 
-- bilinearity 
+- bilinearity ?
 
 ## Subrepresentation 
 
@@ -228,11 +229,11 @@ Thm: every finite complex representation of **finite** group is a direct sum of 
 - Symmetric square and Alternating square : the 2 eigenspaces of the natural commutant 
 
   - ![image-20260405171842650](C:\Users\T480s\AppData\Roaming\Typora\typora-user-images\image-20260405171842650.png)
-  - physique interpretations: $\text{Sym}^2(V)$ = Bosons ; $\text{Alt}^2(V)$ = Fermions  
-  - what's the motivation of the constructions of these invariants subspaces ? 
-    - one of the major task of linear representation is decompose the top space into G-invariant subspaces
-    - To do that, one useful method is to find an endomorphism that is **equivariant under the action of G** i.e. $\forall s \in G, T\rho_s = \rho'_s \cdot T$, (an $G$-homomorphism between the two representations) so that each eigenspace of $T$ is an invariant subspaces of $G$. Such a $T$ is referred to as **commutant** of $G$.
-    - here, we find that $\theta$ can be a commutant, in particular, it's a natural choice i.e. independent of the $G$ concerned, only using the universal property definition of tensor product to prove that $\theta$ is effectively a commutant of any group (that acts on both components of the tensor product). 
+  - $\theta$ is the exchange operator 
+  - Rules : Bossons's states should be in Sym and Fermions's states in Alt.
+  - consequently, we have $e_i \otimes e_i - e_i \otimes e_i = 0$ i.e. Pauli exclusion principle.
+  - 
+  - 
 
 # chap 2 : character theory 
 
@@ -345,7 +346,7 @@ global conditions for this chapter : finite group, finite dim vector space, comp
 - Methods to construct the induction : 
 
   - Function space method（physic, Serre Ex3.5)  : Instead of constructing the tuples with external direct sum, we construct the functions that are defined on $G$ and take value in $W$ i.e. $f : G\to W$  that satisfy $\rho_H(h)f(t) = f(h^{-1}t) $. That means, if we already know $f(r_i)$, then $f$ is determined on the entire coset, and the action of $G$ is only to translate the variable i.e. $(s \cdot f)(t) = f(s^{-1}t)$. This method is useful in the lie representation. 
-  - Tensor product method : using Group Algebra $\mathbb{C}[G]$ 和 $\mathbb{C}[H]$. $$V = \mathbb{C}[G] \otimes_{\mathbb{C}[H]} W$$. $\mathbb{C}[G]$ offers the element $s \otimes w$ 
+  - Tensor product method : using Group Algebra $\mathbb{C}[G]$ and $\mathbb{C}[H]$. $$V = \mathbb{C}[G] \otimes_{\mathbb{C}[H]} W$$. $\mathbb{C}[G]$ offers the element $s \otimes w$ 
 
 - Be cautious of the notations : $\theta$ is the restriction of representation $\rho_H$ restricted on the subspace $W$ , i.e. $\theta = \rho_H|_W$ that's why we use $\theta$ instead of simple $\rho_H$ . Their matrices are of different dimensions.
 
