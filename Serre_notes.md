@@ -1,12 +1,9 @@
-Personal Notes for Jean-Pierre Serre's *Linear Representations of Finite Groups (GTM42)*
+- References
+  - GTM 42 Jean-Pierre Serre's *Linear Representations of Finite Groups*
+- One of the major goal is to understand the abstract harmonic analysis structure under the representation theory view. 
 
-- Notes follow the book's outline for easy cross-referencing, despite my learning order.
-- The purpose of this note is not to digitalize the reference, but recording some questions and personal understanding for future review. If the copy paste is needed then it's done by using screenshot.  
-- Some categorical perspectives are introduced to facilitate understanding. 
-- notations used in the following notes: 
-  - a representation $\rho : G \to \text{GL(V)}$ evaluated at a group element $s$ is denoted $\rho(s)$ but also $\rho_s$ . I do know that $s$ is the variable of $\rho$ and $\rho_s$ is a invertible linear operator that acts on the vector space $V$.  
-  - By abuse of language we sometimes refer to a representation by its representation space. 
-  - underlined content suggests I should review it later 
+- underlined content suggests later review
+- the definitions and theorems in these notes come from various sources, I put them here to make review easier.
 - done : notions for finite complex representations of **finite** groups 
   - G-homomorphism 
   - subrepresentation 
@@ -135,7 +132,7 @@ Personal Notes for Jean-Pierre Serre's *Linear Representations of Finite Groups 
 
 ## Decomposition of finite representation & Weyl's trick 
 
-- <u>finite group representation is totally reducible</u>. 
+- finite group representation is totally reducible. 
 
 ### Maschke's Theorem :
 
